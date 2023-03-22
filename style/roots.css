@@ -1,0 +1,9 @@
+:root {
+    --h1-fnt-size: 2.5em;
+    --border-color: #0B0F25;
+    --txt-color: #EBEEFF;
+    --num-bg-color: #b867a9;
+    --btn-bg-color: #D1A617;
+    --bg-color: linear-gradient(to left bottom, #080e30, #08294e, #03456c, #006388, #0982a2);
+    --btn-fnt-size: 1.5em;
+}
