@@ -1,5 +1,4 @@
 #calculator-container {
-    
     display: flex;
     justify-content: center;
 }
@@ -12,6 +11,8 @@
     height: 80vh;
     width: 35vw;
     overflow: hidden;
+    box-shadow: var(--bx-shadow);
+    
 }
 
 #form #display-container {
@@ -25,12 +26,13 @@
     text-align: right;
     width: 100%;
     height: 100%;
-    padding: 2%;
+    padding: 4%;
     border: none;
     font-size: 2em;
     font-weight: 500;
     background-color: transparent;
     color: var(--txt-color);
+    transition: ease-in-out .5s;
 }
 
 
@@ -44,41 +46,42 @@
 
 }
 
-#form .row nav,
+#form .row input,
 #form .row button {
     width: 15%;
     height: 80%;
     font-size: var(--btn-fnt-size);
     border-radius: 50%;
+    border: none;
     font-weight: bold;
-    box-shadow:
-  0.9px 0.5px 1.4px rgba(0, 0, 0, 0.084),
-  2.2px 1.4px 3.6px rgba(0, 0, 0, 0.12),
-  4.4px 2.8px 7.4px rgba(0, 0, 0, 0.15),
-  9.1px 5.8px 15.3px rgba(0, 0, 0, 0.186),
-  25px 16px 42px rgba(0, 0, 0, 0.27);
+    color: var(--txt-color);
+    box-shadow: var(--bx-shadow);
+    background-color: transparent;
+    display: inherit;
+    justify-content: center;
+    align-items: center;
+  
     transition: ease-in-out .5s;
 }
 
 
 
-#form .row nav {
-    background-color: transparent;
-    display: inherit;
-    justify-content: center;
-    align-items: center;
 
-    
-
+#form #line1,
+#form #line2,
+#form #line3,
+#form #line4 {
+    border-bottom: solid #BF8FB6;
 }
 
-#form .row button {
+#form .row #clear {
     border: none;
     background: var(--btn-bg-color);
+    color: var(--border-color);
 }
 
 
-#form .row nav:hover,
+#form .row input:hover,
 #form .row button:hover {
     cursor: pointer;
     animation: rotateHue 1.2s alternate infinite;
@@ -86,7 +89,7 @@
 
 
 
-#form .row nav:active,
+#form .row input:active,
 #form .row button:active {
     cursor: pointer;
     transform: scale(.9);

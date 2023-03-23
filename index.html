@@ -15,49 +15,52 @@
         <h1 id="h1">Web Calculator</h1>
 
         <section id="calculator-container">
-            <form action="" method="dialog" id="form" autocomplete="off">
+            <form action="" method="dialog" id="form" autocomplete="off" name="calculator">
                 
                 <div id="display-container">
-                    <input type="text" id="display" name="display" placeholder="0" value="0" />
+                    <input type="textfield" id="display" name="display" placeholder="0" value="" />
                 </div>
 
                 <div id="line1" class="row">
-                    <button id="clean" type="reset">AC</button>
-                    <nav value="()" id="parentesis" class="sign">( )</nav>
-                    <nav value="%" id="porcentaje" class="sign">%</nav>
-                    <nav value="/" id="division" class="sign">/</nav>
+                    <input type="reset" id="clear" value="AC">
+                    <input type="button" value="()">
+                    <input type="button" value="%">
+                    <input type="button" value="/">
                 </div>
 
                 <div id="line2" class="row">
-                    <nav value="7" id="7">7</nav>
-                    <nav value="8" id="8">8</nav>
-                    <nav value="9" id="9">9</nav>
-                    <nav value="*" id="multiplicacion" class="sign">*</nav>
+                    <input type="button" value="7">
+                    <input type="button" value="8">
+                    <input type="button" value="9">
+                    <input type="button" value="*">
                 </div>
 
                 <div id="line3" class="row">
-                    <nav value="4" id="4">4</nav>
-                    <nav value="5" id="5">5</nav>
-                    <nav value="6" id="6">6</nav>
-                    <nav value="-" id="resta" class="sign">-</nav>
+                    <input type="button" value="4">
+                    <input type="button" value="5">
+                    <input type="button" value="6">
+                    <input type="button" value="-">
                 </div>
 
                 <div id="line4" class="row">
-                    <nav value="1" id="1">1</nav>
-                    <nav value="2" id="2">2</nav>
-                    <nav value="3" id="3">3</nav>
-                    <nav value="+" id="suma" class="sign">+</nav>
+                    <input type="button" value="1">
+                    <input type="button" value="2">
+                    <input type="button" value="3">
+                    <input type="button" value="+">
                 </div>
 
                 <div id="line5" class="row">
-                    <nav value="" id="" class="sign">+/-</nav>
-                    <nav value="0" id="0">0</nav>
-                    <nav value="." id="." class="sign">.</nav>
-                    <nav value="=" id="igual" class="sign">=</nav>
+                    <input type="button" value="+/-">
+                    <input type="button" value="0">
+                    <input type="button" value=".">
+                    <button>=</button>    
                 </div>
 
             </form>
         </section>
     </main>
+
+    <!-- JAVASCRIPT -->
+    <script src="main.js"></script>
 </body>
 </html>

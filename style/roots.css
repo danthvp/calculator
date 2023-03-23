@@ -6,4 +6,9 @@
     --btn-bg-color: #D1A617;
     --bg-color: linear-gradient(to left bottom, #080e30, #08294e, #03456c, #006388, #0982a2);
     --btn-fnt-size: 1.5em;
+    --bx-shadow: 0.9px 0.5px 1.4px rgba(0, 0, 0, 0.084),
+                2.2px 1.4px 3.6px rgba(0, 0, 0, 0.12),
+                4.4px 2.8px 7.4px rgba(0, 0, 0, 0.15),
+                9.1px 5.8px 15.3px rgba(0, 0, 0, 0.186),
+                25px 16px 42px rgba(0, 0, 0, 0.27);
 }
