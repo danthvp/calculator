@@ -15,46 +15,38 @@
         <h1 id="h1">Web Calculator</h1>
 
         <section id="calculator-container">
+            <input type="textfield" id="display" name="display" placeholder="0" value="" /> 
             <form action="" method="dialog" id="form" autocomplete="off" name="calculator">
+                <br/>
+                <input type="reset" id="clear" value="AC">
+                <input type="button" value="()">
+                <input type="button" value="%">
+                <input type="button" value="/">
+
+                <br/>
+                <input type="button" value="7">
+                <input type="button" value="8">
+                <input type="button" value="9">
+                <input type="button" value="*">
+
+                <br/>
+                <input type="button" value="4">
+                <input type="button" value="5">
+                <input type="button" value="6">
+                <input type="button" value="-">
+
+                <br/>
+                <input type="button" value="1">
+                <input type="button" value="2">
+                <input type="button" value="3">
+                <input type="button" value="+">
+
+                <br/>
+                <input type="button" value="+/-">
+                <input type="button" value="0">
+                <input type="button" value=".">
+                <button id="equals">=</button>    
                 
-                <div id="display-container">
-                    <input type="textfield" id="display" name="display" placeholder="0" value="" />
-                </div>
-
-                <div id="line1" class="row">
-                    <input type="reset" id="clear" value="AC">
-                    <input type="button" value="()">
-                    <input type="button" value="%">
-                    <input type="button" value="/">
-                </div>
-
-                <div id="line2" class="row">
-                    <input type="button" value="7">
-                    <input type="button" value="8">
-                    <input type="button" value="9">
-                    <input type="button" value="*">
-                </div>
-
-                <div id="line3" class="row">
-                    <input type="button" value="4">
-                    <input type="button" value="5">
-                    <input type="button" value="6">
-                    <input type="button" value="-">
-                </div>
-
-                <div id="line4" class="row">
-                    <input type="button" value="1">
-                    <input type="button" value="2">
-                    <input type="button" value="3">
-                    <input type="button" value="+">
-                </div>
-
-                <div id="line5" class="row">
-                    <input type="button" value="+/-">
-                    <input type="button" value="0">
-                    <input type="button" value=".">
-                    <button>=</button>    
-                </div>
 
             </form>
         </section>
