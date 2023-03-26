@@ -10,7 +10,7 @@
 }
 
 body {
-    height: 100vh;
+    height: max-content;
     background: var(--bg-color);
     color: var(--txt-color);
     background-image: var(--bg-color);

@@ -8,6 +8,10 @@
     <!-- CSS -->
     <link rel="stylesheet" href="style/mainStyle.css">
 
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
     <title>Calculator</title>
 </head>
 <body>
@@ -18,28 +22,28 @@
             <input type="textfield" id="display" name="display" placeholder="0" value="" /> 
             <form action="" method="dialog" id="form" autocomplete="off" name="calculator">
                 <br/>
-                <input type="reset" id="clear" value="AC">
-                <input type="button" value="()">
-                <input type="button" value="%">
-                <input type="button" value="/">
+                <button id="clear">AC</button>
+                <button id="backspace"><i class='bx bx-undo'></i></button>
+                <input type="button" value="%" class="operators">
+                <input type="button" value="/" class="operators">
 
                 <br/>
                 <input type="button" value="7">
                 <input type="button" value="8">
                 <input type="button" value="9">
-                <input type="button" value="*">
+                <input type="button" value="*" class="operators">
 
                 <br/>
                 <input type="button" value="4">
                 <input type="button" value="5">
                 <input type="button" value="6">
-                <input type="button" value="-">
+                <input type="button" value="-" class="operators">
 
                 <br/>
                 <input type="button" value="1">
                 <input type="button" value="2">
                 <input type="button" value="3">
-                <input type="button" value="+">
+                <input type="button" value="+" class="operators">
 
                 <br/>
                 <input type="button" value="+/-">
@@ -54,5 +58,6 @@
 
     <!-- JAVASCRIPT -->
     <script src="main.js"></script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
 </body>
 </html>

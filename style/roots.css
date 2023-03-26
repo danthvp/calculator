@@ -5,18 +5,17 @@
     --num-bg-color: #b867a9;
     --btn-bg-color: #D1A617;
     --bg-color: linear-gradient(to left bottom, #080e30, #08294e, #03456c, #006388, #0982a2);
+    --btn-operators: #015c7e;
     --btn-fnt-size: 1.5em;
     --bx-shadow:
     3.1px 3.8px 3.6px rgba(0, 0, 0, 0.037),
     5.8px 7.2px 10px rgba(0, 0, 0, 0.059),
     9.1px 11.3px 24.1px rgba(0, 0, 0, 0.078),
-    21px 26px 80px rgba(0, 0, 0, 0.1)
-  ;
+    21px 26px 80px rgba(0, 0, 0, 0.1);
     --bx-shadow2:
     -2.8px -6.1px 3.6px rgba(0, 0, 0, 0.089),
     -5.2px -11.3px 10px rgba(0, 0, 0, 0.199),
     -8.3px -17.8px 24.1px rgba(0, 0, 0, 0.103),
-    -19px -41px 80px rgba(0, 0, 0, 0.178)
-  ;
-  ;
+    -19px -41px 80px rgba(0, 0, 0, 0.178);
+
 }

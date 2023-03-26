@@ -5,7 +5,7 @@
     flex-direction: column;
     width: max-content;
     margin: auto;
-    height: 75vh;
+    height: 80.67vh;
     box-shadow: var(--bx-shadow);
 }
 
@@ -41,10 +41,6 @@
     border: none;
 }
 
-#form #equals {
-    box-shadow: none;
-    border-bottom-right-radius: .6em;
-}
 
 #form input[value="+/-"] {
     border-bottom-left-radius: .6em;
@@ -54,12 +50,10 @@
 
 
 
-
 #form  input[type="button"],
-#form #clear,
-#form  #equals {
+#form button {
     width: calc(100% / 4);
-    height: max-content;
+    height: calc(100% / 5);
     padding: 6.2% 0;
     font-size: var(--btn-fnt-size);
     font-weight: bold;
@@ -70,7 +64,31 @@
     transition: ease-in-out .3s;
 }
 
+#form #backspace {
+    background-color: var(--btn-bg-color);
+    color: var(--border-color);
+}
 
+#form #backspace i {
+    font-size: 1.6em;
+    font-weight: bold;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--border-color);
+}
+
+
+#form input.operators {
+    background-color: var(--btn-operators);
+}
+
+
+#form #equals {
+    border-bottom-right-radius: .6em;
+    background-color: var(--btn-operators);
+}
 
 #form #clear {
     background: var(--btn-bg-color);
@@ -79,8 +97,7 @@
 
 
 #form input[type="button"]:hover,
-#form #equals:hover,
-#form #clear:hover {
+#form button:hover {
     cursor: pointer;
     animation: rotateHue 1.2s alternate infinite;
 }
@@ -88,11 +105,10 @@
 
 
 #form input[type="button"]:active,
-#form #equals:active {
+#form button:active {
     cursor: pointer;
     transform: scale(.9);
 }
-
 
   
   @keyframes rotateHue {
