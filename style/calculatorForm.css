@@ -5,9 +5,12 @@
     flex-direction: column;
     width: max-content;
     margin: auto;
-    height: 80.67vh;
+    margin-top: 1%;
+    height: 75vh;
     box-shadow: var(--bx-shadow);
     overflow: hidden;
+    
+    animation: appear ease-in-out 2s;
 }
 
 #form {
@@ -106,6 +109,19 @@
 #form button:active {
     cursor: pointer;
     transform: scale(.9);
+}
+
+
+
+@keyframes appear {
+    from {
+        transform: scale(.1);
+        opacity: 0;
+    }
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
 }
 
   
