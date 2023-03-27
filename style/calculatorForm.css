@@ -1,5 +1,5 @@
 #calculator-container {
-    border: solid #b867a9;
+    border: solid var(--txt-color);
     border-radius: 1em;
     display: flex;
     flex-direction: column;
@@ -7,6 +7,7 @@
     margin: auto;
     height: 80.67vh;
     box-shadow: var(--bx-shadow);
+    overflow: hidden;
 }
 
 #form {
@@ -47,53 +48,50 @@
 }
 
 
-
-
-
-#form  input[type="button"],
-#form button {
-    width: calc(100% / 4);
-    height: calc(100% / 5);
-    padding: 6.2% 0;
-    font-size: var(--btn-fnt-size);
-    font-weight: bold;
-    color: var(--txt-color);
-    box-shadow: var(--bx-shadow);
-    background-color: transparent;
-    border: none;
-    transition: ease-in-out .3s;
-}
-
-#form #backspace {
-    background-color: var(--btn-bg-color);
-    color: var(--border-color);
-}
-
-#form #backspace i {
-    font-size: 1.6em;
-    font-weight: bold;
+#form #buttons-container {
     height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: var(--border-color);
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    overflow: hidden;   
+    
 }
 
 
-#form input.operators {
-    background-color: var(--btn-operators);
+#form input[type="button"],
+#form button {
+    border: none;
+    box-shadow: var(--bx-shadow);
+    background-color: var(--btn-num-bg);
+    color: var(--txt-color);
+    font-size: 1.2em;
+    font-weight: 700;
+    transition: ease-in-out .5s; 
+}
+
+
+#form #clear {
+    grid-column: 1/3;
 }
 
 
 #form #equals {
-    border-bottom-right-radius: .6em;
+    grid-column: 3/5;
+}
+
+
+
+#form #backspace, 
+#form #clear {
+    background-color: var(--btn-bg-color);
+    color: var(--border-color);
+}
+
+#form input.operators, 
+#form button.operators{
     background-color: var(--btn-operators);
 }
 
-#form #clear {
-    background: var(--btn-bg-color);
-    color: var(--border-color);
-}
 
 
 #form input[type="button"]:hover,
