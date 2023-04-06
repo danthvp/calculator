@@ -18,4 +18,8 @@
     -8.3px -17.8px 24.1px rgba(0, 0, 0, 0.103),
     -19px -41px 80px rgba(0, 0, 0, 0.178);
 
+
+    /* MEDIA QUERY */
+    -h1-media: 2em;
+    --btn-media: 1.25em;
 }

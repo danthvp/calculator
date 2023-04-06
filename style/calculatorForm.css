@@ -3,7 +3,7 @@
     border-radius: 1em;
     display: flex;
     flex-direction: column;
-    width: max-content;
+    width: 40%;
     margin: auto;
     margin-top: 1%;
     height: 75vh;
@@ -138,4 +138,81 @@
         25px 16px 42px rgba(94, 94, 94, 0.192);
     }
   }
+
+
+
+
+
+
+
+
+
+
+
+/* ------------------MEDIA QUERY----------------- */
+
+
+
+/* ---------------------TABLET--------------- */
+
+
+
+@media only screen and (max-width: 992px){
+    #form input[type="button"]:hover,
+    #form button:hover {
+        animation: none;
+    }
+
+
+    #form input[type="button"]:active,
+    #form button:active, 
+    #form #clear:active {
+        cursor: pointer;
+        transform: scale(.9);
+        background-color: var(--border-color);
+    }
+    #form #clear:active {
+        background-color: var(--border-color);
+        color: var(--txt-color);
+    }
+}
+
+
+
+
+
+
+
+
+
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    #form input[type="button"],
+    #form button, 
+    #form #clear {
+        transition: ease-out .2s;
+    }
+}
+
+
+
+/* ------------------IPAD-MINI------------------ */
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    #calculator-container {
+        height: 70vh;
+        width: 50%;
+    }
+
+    #display {
+        font-size: 1.60em;
+    }
+
+}
+
+
+
+
+@media only screen and (min-width: 559px) and (max-width: 767px) {
+    
+}
 
