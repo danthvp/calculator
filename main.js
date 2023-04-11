@@ -6,6 +6,8 @@ const backspace = document.getElementById('backspace');
 const backspaceI = document.querySelector('i');
 
 
+window.onload = alert("This website is in development, some functionalities are not going to work yet.");
+
 
 
 form.addEventListener('click', (e) => {

@@ -219,7 +219,7 @@
     }
 }
 
-@media only screen and (max-width: 559px) {
+@media only screen and (max-width: 558px) {
     #calculator-container {
         width: 65%;
         height: 80vh;
