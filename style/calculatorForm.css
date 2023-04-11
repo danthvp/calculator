@@ -222,7 +222,7 @@
 @media only screen and (max-width: 559px) {
     #calculator-container {
         width: 65%;
-        height: 70vh;
+        height: 80vh;
         margin-top: 5%;
     }
 
