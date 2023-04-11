@@ -75,3 +75,11 @@ body {
         padding: 5%;
     }
 }
+
+
+@media only screen and (max-width: 559px) {
+    #h1 {
+        font-size: 2em;
+        padding: 4%;
+    }
+}

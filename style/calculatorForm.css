@@ -3,7 +3,7 @@
     border-radius: 1em;
     display: flex;
     flex-direction: column;
-    width: 40%;
+    width: 30%;
     margin: auto;
     margin-top: 1%;
     height: 75vh;
@@ -213,6 +213,25 @@
 
 
 @media only screen and (min-width: 559px) and (max-width: 767px) {
-    
+    #calculator-container {
+        width: 50%;
+        height: 65vh;
+    }
 }
 
+@media only screen and (max-width: 559px) {
+    #calculator-container {
+        width: 60%;
+        height: 55vh;
+        margin-top: 5%;
+    }
+
+    #display {
+        font-size: 1.8em;
+    }
+
+    #form input[type="button"],
+    #form button {
+        font-size: 1em;
+    }
+}
