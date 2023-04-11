@@ -221,8 +221,8 @@
 
 @media only screen and (max-width: 559px) {
     #calculator-container {
-        width: 60%;
-        height: 60vh;
+        width: 65%;
+        height: 70vh;
         margin-top: 5%;
     }
 
@@ -232,6 +232,6 @@
 
     #form input[type="button"],
     #form button {
-        font-size: 1em;
+        font-size: 1.1em;
     }
 }
